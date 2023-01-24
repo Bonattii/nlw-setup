@@ -41,7 +41,7 @@ export function New() {
   async function handleCreateNewHabit() {
     try {
       if (!title.trim() || weekDays.length === 0) {
-        Alert.alert(
+        return Alert.alert(
           'New Habit',
           'Please inform the title of the habit and choose the frequency.'
         );
